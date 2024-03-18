@@ -1,0 +1,105 @@
+.bookkeepingcontainer {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-height: 750px;
+    margin-bottom: 0px;
+    margin-top: 80px;
+}
+
+
+
+.bookkeepingHeader {
+    color: #ffffff;
+    /* White color */
+    font-family: 'Arial', sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    /* Adjust font size as needed */
+    margin-left: 0px;
+
+    /* Adjust margin as needed to create spacing between the logo and the company name */
+}
+
+.bookkeepingText {
+    color: #ffffffc9;
+    /* White color */
+    /* font-family: "Segoe UI", Roboto, Arial, sans-serif; */
+    font-family: 'Calibri', Roboto, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    /* Adjust font size as needed */
+    margin-left: 0px;
+    line-height: 1.5;
+
+    /* Adjust margin as needed to create spacing between the logo and the company name */
+}
+
+.bottomdiv {
+
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+
+
+}
+
+.imagecontainer {
+    margin-left: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    height: 20px;
+}
+
+.imagecontainer img {
+    margin-right: 10px;
+    /* Add spacing between image and paragraph */
+}
+
+.bookedItemext {
+
+    color: #ffffffc9;
+    /* White color */
+    /* font-family: "Segoe UI", Roboto, Arial, sans-serif; */
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    /* Adjust font size as needed */
+    margin-left: 0px;
+    line-height: 1;
+    margin-top: 5px;
+
+}
+
+.watchdemo {
+    background-color: #000000;
+    color: #ffffffe1;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.watchdemodiv {
+
+    margin-left: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+
+
+.buttonGroup {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    /* Pushes the button group to the right */
+    /* Make the buttons display inline */
+}

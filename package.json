@@ -1,0 +1,41 @@
+{
+  "name": "bookkeeping-app-fe",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:aws": "pm2 start npm --name 'bookkeeping' -- run dev",
+    "build": "next build",
+    "start": "next start",
+    "start:aws": "pm2 start npm --name 'bookkeeping' -- run start",
+    "stop:aws": "pm2 stop bookkeeping",
+    "lint": "next lint",
+    "killall": "pm2 kill all"
+  },
+  "dependencies": {
+    "framer-motion": "^11.0.6",
+    "next": "14.1.0",
+    "pm2": "^5.3.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-fast-marquee": "^1.6.4",
+    "react-icons": "^5.0.1",
+    "react-owl-carousel": "^2.3.3",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/owl.carousel": "^2.3.6",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5",
+    "webpack": "^5.90.3"
+  }
+}
