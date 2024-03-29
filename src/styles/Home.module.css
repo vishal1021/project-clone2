@@ -1,17 +1,99 @@
-.main {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
-    padding: 20px;
+
+.blogbody{
     position: relative;
-    padding-bottom: 0px;
+    width: 40%;
+	margin: 30%;
+    margin-top: 2%;   
 }
 
-.content {
-    flex-grow: 1;
+.DirtyDozenTaxcontaine {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 8rem;
+}
+.headerstyle {
+    color: #000000c9;
+    /* White color */
+    /* font-family: "Segoe UI", Roboto, Arial, sans-serif; */
+    font-family: 'Calibri', Roboto, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.25;
+    margin-bottom: 0px;
+    margin-top: -50px;  
+    position: absolute;
+    
+}
+.navcontainer {
+    position: absolute;
+    width: 20%;
+    margin-left: 50px;
+    margin-top: 900px;
+}
+.p{
+    position: absolute;
+    margin-top: 920px;
+    right: 1400px;
+    
+}
+.line{
+    border: solid 0.1px;
+    margin-bottom: 50px;
+    width: 55px;
+    margin-left: -100px;
+}
+
+.p1{
+    width: 100%;
+}
+
+.s{
+    height: 1000px;
+    position: absolute;
+    margin-top: 900px;
+    width: 25%;
+    margin-left: 75%;
+    text-align: left;
+    margin-right: 200px;
+
+}
+.t{
+    margin-right: 200px;
+    margin-top: 0px;
+}
+.p2{
+    margin-top: -800px;
+    margin-left: 150%;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 40%;
+}
+.p3{
+    margin-top: -100px;
+    margin-left: 60%;
+    display: flex;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0%;
+}
+
+
+.contentcontainer {
+    margin-left: 50px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.h{
+    margin-top: 0%;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 100px;
+}
+.w{
+    width: 40%;
+    margin-left: 30%;
 }

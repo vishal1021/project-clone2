@@ -1,90 +1,166 @@
-import React, { useState } from 'react';
-import styles from '@/styles/Home.module.css';
-import Image from '@/public/p1.jpg';
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.blog-body{
+			width: 40%;
+			margin: 30%;
+			margin-top: -75%;
+			
+			position: relative;
 
-interface DirtyDozenTaxProp {
-    id: string;
-}
+			
+		}
 
-const DirtyDozenTax: React.FC<DirtyDozenTaxProp> = ({ id }) => {
-    const [selectedCalculator, setSelectedCalculator] = useState<string | null>(null);
+		.o{
+			margin-left: 0px;
+		}
+		.pic{
+			width: 100%;
+		}
+		.q{
+			position: absolute;
+			height: 1000px;
+			position: relative;
+			margin-top: -67%;
+			width: 25%;
+		}
+		.a{
+			margin-left: 30%;
+		}
+		.s{
+			position: relative;
+			height: 1000px;
+			position: relative;
+			margin-top: 10%;
+			width: 25%;
+			margin-left: 75%;
+			text-align: left;
 
-    const handleCalculatorSelect = (calculator: string) => {
-        setSelectedCalculator(calculator);
-    };
+		}
+		.t{
+			margin-right: 200px;
+			margin-top: -300px;
+		}
+		.p2{
+			margin-top: 80px;
+			margin-left: 70%;
+			position: relative;
+			width: 80px;
+			height: 80px;
+			margin-bottom: 20%;
+		}
+		.p3{
+			margin-left: 70%;
+			display: flex;
+			position: relative;
+			width: 80px;
+			height: 80px;
+		}
+		.h{
+			width: 40%;
+			margin-left: 30%;
+		}
+		.b{
+			margin-left: 10px;
+			margin-right: 70px;
+		}
+		.w{
+			width: 40%;
+			margin-left: 30%;
+		}
 
-   const links = [
-        { label: '1. Common Types of Tax Fraud:', route: '/startup', identifier: 'startup' },
-        { label: '2. Detailed Analysis of the “Dirty Dozen” Tax Scams', route: '/taxCal', identifier: 'taxCal' },
-        { label: '3. Methods and Strategies to Identify and Prevent Tax Scams', route: '/netCal', identifier: 'netCal' },
-        { label: '4. What To Do If You Think You have Fallen Victim to a Tax Scam', route: '/sbaCal', identifier: 'sbaCal' },
-        { label: '5. Conclusion', route: '/churnCal', identifier: 'churnCal' },
-    ]; 
 
-    return (
-  <div className={styles.DirtyDozenTaxcontainer}>
-             <div className={styles.navcontainer}>
-                <nav>
-                    <ul>
-                        <div className={styles.headerstyle}>In this article </div>
-
-                        {links.map(link => (
-                            <div key={link.identifier} >
-                                <p className={styles.linkdiv} onClick={() => handleCalculatorSelect(link.identifier)}>
-                                    <a href="#" className={styles.linkstyle}>{link.label} </a>
-                                </p>
-                            </div>
-                        ))}
-                    </ul>
-                </nav>
-            </div>
-            <div className={styles.p}>
-        <div className={styles.line}></div>
-        <div className={styles.line}></div>
-        <div className={styles.line}></div>
-        <div className={styles.line}></div>
-        <div className={styles.line}></div>
-    </div>
-          <div className={styles.s}>
-		         
-		       <div className={styles.t}>
-			      <h5>More from Fincent</h5>
-			       <ul>
-				       <li>
+	</style>
+</head>
+<body>
+	<img class="pic" src='D:\project clone\fin-app-fe\public\p1.jpg'></img>
+	<div class="h"><h1 class="b">Beware of Dirty Dozen Tax Scams 2023: Protect Your Finances</h1></div>
+	<nav class="w">
+		<a class="" title="Tax Tips" href="/blog/category/tax-tips">Tax Tips</a>
+		<span class="styles_infoDivider__BkZ_s">|</span>
+		<span class="">Fincent Team</span><span class="styles_infoDivider__BkZ_s">|</span>
+		<span class="">Published: <!-- -->11 Oct 2023</span>
+		<span class="styles_infoDivider__BkZ_s">|</span>
+		<span class="">Updated: <!-- -->03 Nov 2023</span>
+	</nav>
+	<div class="s">
+		<img class="p2" src="D:\project clone\fin-app-fe\public\p2.jpg">
+		<img class="p3" src="D:\project clone\fin-app-fe\public\p3.jpg">
+		<aside class="t">
+			<h5 class="styles_moreFincentSectionTitle__CfIpc">More from Fincent</h5>
+			<ul>
+				<li class="styles_eachRecommendation__gbqJw">
+					<div class="flex justify-between items-center">
+						<div class="">
+							<a title="What Is Income Tax Liability and How Do You Calculate It?" href="/blog/category/tax-tips">
+								<h6 class="styles_blogCategoryWrapper__VwsZF">Tax Tips</h6>
+							</a>
+							<a title="What Is Income Tax Liability and How Do You Calculate It?" href="/blog/what-is-income-tax-liability-and-how-do-you-calculate-it">
+								<h4 class="styles_sideCardTitle__22cc3">What Is Income Tax Liability and How Do You Calculate It?</h4>
+							</a>
+						</div>
+						<a class="styles_sideCardCover__rcuAJ" title="What Is Income Tax Liability and How Do You Calculate It?" href="/blog/what-is-income-tax-liability-and-how-do-you-calculate-it" style="background-image: url(&quot;https://fincent-website-strapi-prod.s3.us-east-2.amazonaws.com/blog_blog_Cover_svg_52e7d128ce.svg&quot;);">
 							
-								<h6>Tax Tips</h6>
-								<h4>What Is Income Tax Liability and How Do You Calculate It?</h4>
-                                <img className={styles.p2} src="p2.jpg"/>
-					
-				         </li>
-				         <li>
-								<h6>Tax Tips</h6>
-								<h4>A Beginner's Guide to Record-Keeping for Small Businesses</h4>
-                                <img className={styles.p3} src="p3.jpg"/>
-				         </li>
-			        </ul>
-		        </div>
-                </div> 
-	
-
-             
-                <img className={styles.p1} src='p1.jpg'/>
-                 
-            
-		         
-            <div className={styles.h}><h1>Beware of Dirty Dozen Tax Scams 2023: Protect Your Finances</h1></div>
-           
-              
-
-     <div className={styles.blogbody}>
-        
-   
-         {/* <BetterBookkeeping id="betterbookkeeping" /> */}  
-     <div className={styles.o}>
+						</a>
+					</div>
+				</li>
+				<li class="styles_eachRecommendation__gbqJw">
+					<div class="flex justify-between items-center">
+						<div class="">
+							<a title="A Beginner's Guide to Record-Keeping for Small Businesses" href="/blog/category/tax-tips">
+								<h6 class="styles_blogCategoryWrapper__VwsZF">Tax Tips</h6>
+							</a>
+							<a title="A Beginner's Guide to Record-Keeping for Small Businesses" href="/blog/a-beginners-guide-to-record-keeping-for-small-businesses">
+								<h4 class="styles_sideCardTitle__22cc3">A Beginner's Guide to Record-Keeping for Small Businesses</h4>
+							</a>
+						</div>
+						<a class="styles_sideCardCover__rcuAJ" title="A Beginner's Guide to Record-Keeping for Small Businesses" href="/blog/a-beginners-guide-to-record-keeping-for-small-businesses" style="background-image: url(&quot;https://fincent-website-strapi-prod.s3.us-east-2.amazonaws.com/blog_blog_Cover_svg_249a9f3131.svg&quot;);">
+							
+						</a>
+					</div>
+				</li>
+			</ul>
+		</aside>
+	</div>
+	<div class="q">
+		<aside class="a">In This Article</p>
+			<ol class="flex flex-col gap-4 | text-raisin-black-300 opacity-50" type="1">
+				<li class="l">
+					<span class="flex items-start">1.&nbsp;
+						<a href="#common-types-of-tax-fraud">Common Types of Tax Fraud</a>
+					</span>
+				</li>
+				<li class="l">
+					<span class="flex items-start">2.&nbsp;
+						<a href="#detailed-analysis-of-the-“dirty-dozen”-tax-scams">Detailed Analysis of the “Dirty Dozen” Tax Scams</a>
+					</span>
+				</li>
+				<li class="l ">
+					<span class="flex items-start">3.&nbsp;
+						<a href="#methods-and-strategies-to-identify-and-prevent-tax-scams">Methods and Strategies to Identify and Prevent Tax Scams</a>
+					</span>
+				</li>
+				<li class="l">
+					<span class="flex items-start">4.&nbsp;
+						<a href="#what-to-do-if-you-think-you've-fallen-victim-to-a-tax-scam">What To Do If You Think You've Fallen Victim to a Tax Scam</a></span>
+					</li>
+					<li class="l">
+						<span class="flex items-start">5.&nbsp;
+							<a href="#conclusion">Conclusion</a>
+						</span>
+					</li>
+				</ol>
+			</aside>
+	</div>
+	<div class="blog-body">
+		<div class="o">
 			<p>Imagine this: You receive an unexpected "urgent" email on a Tuesday. The sender claims to represent the IRS, requiring sensitive financial information. Instantly, you remember warnings of tax scams—is this one of them?</p>
 			<p>The notorious "Dirty Dozen" tax scams threaten the financial security of taxpayers.</p>
-			<p>With advancements in 2023, these 
-                <a href="https://fincent.com/glossary/irs-scams">scams
+			<p>With advancements in 2023, these <a href="https://fincent.com/glossary/irs-scams">scams
 			</a> are harder to avoid but easier to fall prey to. This article provides vital insight to help guard against them. Awareness and vigilance are key to fending off these schemes.</p>
 			<p>In this article, we will cover:</p>
 			<ul>
@@ -96,7 +172,7 @@ const DirtyDozenTax: React.FC<DirtyDozenTaxProp> = ({ id }) => {
 				<li>The role of the IRS in protecting taxpayers and their initiatives against these scams.</li>
 			</ul>
 			<p>Let’s dive in!</p>
-			<h2><strong>Common Types of Tax Fraud</strong></h2>
+			<h2 data-name="blog-title" class="scroll-m-24" id="common-types-of-tax-fraud"><strong>Common Types of Tax Fraud</strong></h2>
 			<p>Tax fraud is a serious issue that many taxpayers face. This crime can occur when individuals or businesses purposely and illegally attempt to avoid paying taxes. The following are some of the most common types of tax fraud:</p>
 			<ul>
 				<li>**False deductions: **The taxpayer claims deductions for expenses that they didn't have. This can include home office expenses, business travel, and high-end business meals.</li>
@@ -105,14 +181,13 @@ const DirtyDozenTax: React.FC<DirtyDozenTaxProp> = ({ id }) => {
 					<strong>Fake claimants:</strong> Fraudsters claim supposed dependents to leverage larger refunds.</li>
 				<li>T**ax preparer fraud: **Some unscrupulous tax preparers inflate their clients' returns, often without their knowledge, to secure larger refunds or returns.</li>
 			</ul>
-			<h2>
+			<h2 data-name="blog-title" class="scroll-m-24" id="detailed-analysis-of-the-“dirty-dozen”-tax-scams">
 				<strong>Detailed Analysis of the “Dirty Dozen” Tax Scams</strong></h2>
 			<p>Be it fraudulent text messages, abusive tax shelters, or even a false promise of inflated refunds—each scam in the “Dirty Dozen” has its own unique way of trapping unsuspecting taxpayers.</p>
 			<p>The grunt of these scams lie in the fine play of trust, urgency and fear - emotions that fraudsters manipulate in hopes of making easy money. Let’s take a look at this list in more detail:</p>
 			<h3><strong>Phishing scams</strong></h3>
 			<p>
-				<a href="https://fincent.com/glossary/phishing-scams">Phishing scams</a> involve fake emails or websites created to steal personal information. In a tax phishing scam, you might receive an email
-                 that seems to be from the IRS or another tax-related entity. They'll ask you to enter sensitive information like your Social Security number, bank account details, or even your IRS login credentials. The scammers then use this information to commit identity theft and file fraudulent tax returns in your name.
+				<a href="https://fincent.com/glossary/phishing-scams">Phishing scams</a> involve fake emails or websites created to steal personal information. In a tax phishing scam, you might receive an email that seems to be from the IRS or another tax-related entity. They'll ask you to enter sensitive information like your Social Security number, bank account details, or even your IRS login credentials. The scammers then use this information to commit identity theft and file fraudulent tax returns in your name.
 			</p>
 			<h3><strong>Fake charities</strong></h3>
 			<p>Fake charity scams ramp up around tax season as fraudsters manipulate taxpayers' desire to claim deductions for donations. Scammers lead you to believe your donation is going to a worthy cause, when in reality, it's funding their fraudulent activities. Always conduct thorough research before making any charitable donations.</p>
@@ -147,7 +222,7 @@ const DirtyDozenTax: React.FC<DirtyDozenTaxProp> = ({ id }) => {
 			<h3><strong>Ghost tax preparers</strong></h3>
 			<p>These scammers pose as legitimate tax preparers but don't sign the tax returns they prepare, hence the term “ghost.” They may promise large refunds and then disappear once the return is filed, leaving the taxpayer in a position of potential liability.</p>
 			<p>Be aware of the “Dirty Dozen” scams that exploit taxpayers' vulnerabilities by using tactics such as manipulation, coercion, and identity theft. To protect yourself from these scams, verify any suspicious communications and claims related to your taxes and never provide personal information unless positive of the recipient's legitimacy. Exercising caution is crucial in preserving your financial and personal well-being.</p>
-			<h2 ><strong>Methods and Strategies to Identify and Prevent Tax Scams</strong></h2>
+			<h2 data-name="blog-title" class="scroll-m-24" id="methods-and-strategies-to-identify-and-prevent-tax-scams"><strong>Methods and Strategies to Identify and Prevent Tax Scams</strong></h2>
 			<p>Understanding the various types of tax scams is the first step to protecting yourself.</p>
 			<p>However, being able to identify and prevent these scams is where the real defense lies. Below are some methods and strategies that can help you stay safe during tax season.</p>
 			<p><strong>Know the IRS communication methods</strong></p>
@@ -177,7 +252,7 @@ const DirtyDozenTax: React.FC<DirtyDozenTaxProp> = ({ id }) => {
 			<p><strong>Consider identity theft protection services</strong></p>
 			<p>If you're particularly concerned about tax-related identity theft, you may want to consider investing in an identity theft protection service. These services monitor your personal information and alert you to potential threats or suspicious activity. They can also offer assistance in the event that your identity is compromised.</p>
 			<p>While no defensive strategy is foolproof, incorporating these methods into your financial routine can significantly reduce the chance of falling victim to tax scams. Be proactive in protecting your personal and financial security, exercise caution with your sensitive information, and remember, when it comes to scams, prevention is always better than cure.</p>
-			<h2><strong>What To Do If You Think You've Fallen Victim to a Tax Scam</strong></h2>
+			<h2 data-name="blog-title" class="scroll-m-24" id="what-to-do-if-you-think-you've-fallen-victim-to-a-tax-scam"><strong>What To Do If You Think You've Fallen Victim to a Tax Scam</strong></h2>
 			<p>If you suspect that you have been targeted or fallen victim to a tax scam, don't panic. Follow the steps below to regain control and protect yourself from further damage.</p>
 			<p><strong>Contact the IRS directly</strong></p>
 			<p>The fastest way to confirm if a suspicious correspondence or request is a scam is to contact the IRS directly. They can check your account for any alerts or inconsistencies and guide you on the next steps to take.</p>
@@ -207,49 +282,13 @@ const DirtyDozenTax: React.FC<DirtyDozenTaxProp> = ({ id }) => {
 			<p>After a tax scam, ensure to maintain ongoing communication with the IRS. They can provide you with updates on your case, guide you through potential audits, and offer assistance in resetting your tax account.</p>
 			<p><strong>Ensure recovery</strong></p>
 			<p>Lastly, ensure comprehensive recovery from the scam. Collaborate with all relevant entities, including your financial institutions and the IRS, to rectify any damages and safeguard your financial future.</p>
-			<h2>Conclusion</h2>
-			<p>Safeguarding against the "Dirty Dozen" tax scams demands proactive awareness and preventive measures. Recognize the schemes, employ defensive strategies, 
-                and stay informed on potential threats. If you suspect a scam, act swiftly — contact the IRS, report incidents, secure compromised accounts, and monitor your credit. Seek professional assistance,
-                 change passwords, file police reports if necessary, and utilize tools like Identity Protection PINs. Maintain open communication with the IRS for ongoing support. Remember, being vigilant is your best defense against tax scams — protect your financial well-being with knowledge and swift action.</p>
-            
-		<div ><p >Fincent: Your Business's Personal Financial Wizard - From Bookkeeping to Tax Filing</p>
-			<div >
-				<a title="Book a demo" href="/book-a-demo">Book a demo</a>
-			</div>
+			<h2 data-name="blog-title" class="scroll-m-24" id="conclusion">Conclusion</h2>
+			<p>Safeguarding against the "Dirty Dozen" tax scams demands proactive awareness and preventive measures. Recognize the schemes, employ defensive strategies, and stay informed on potential threats. If you suspect a scam, act swiftly — contact the IRS, report incidents, secure compromised accounts, and monitor your credit. Seek professional assistance, change passwords, file police reports if necessary, and utilize tools like Identity Protection PINs. Maintain open communication with the IRS for ongoing support. Remember, being vigilant is your best defense against tax scams — protect your financial well-being with knowledge and swift action.</p>
 		</div>
-        <div>
-            <div >
-                <h5 >Share</h5>
-                </div>
-                <ul >
-                    <li>
-                        <a  href="https://twitter.com/intent/tweet?url=https://fincent.com//blog/dirty-dozen-tax-scams-2023&amp;text=Beware of Dirty Dozen Tax Scams 2023: Protect Your Finances" title="Twitter" target="_blank">
-            <img alt="Twitter" loading="lazy" width="15" height="15" decoding="async" data-nimg="1" src="/assets/images/icons/twitter-icon.svg"className="color: transparent;"/>
-            </a></li>
-            <li >
-                <a target="_blank" title="Facebook">
-                    <img alt="Facebook" loading="lazy" width="15" height="15" decoding="async" data-nimg="1" src="/assets/images/icons/facebook-icon.svg"/>
-                    </a>
-                    </li>
-                    <li>
-                    <a  href="https://www.linkedin.com/shareArticle?url=https://fincent.com//blog/dirty-dozen-tax-scams-2023&amp;text=Beware of Dirty Dozen Tax Scams 2023: Protect Your Finances" target="_blank" title="Linkedin">
-                        <img alt="LinkedIn" loading="lazy" width="15" height="15" decoding="async" data-nimg="1" src="/assets/images/icons/linkedin-icon.svg"className="color: transparent;"/>
-                        </a>
-                        </li>
-                    <li>
-                    <a  href="https://www.instagram.com/?url=https://fincent.com//blog/dirty-dozen-tax-scams-2023" target="_blank" title="Instagram">
-                        <img alt="Instagram" loading="lazy" width="15" height="15" decoding="async" data-nimg="1" src="/assets/images/icons/instagram-icon.svg"/>
-                        </a>
-                        </li>
-                        </ul>
-             </div>
-        </div>
-    </div>
-    </div>
-    );
+		<div class="p-6 | bg-black | rounded-xl | lg:my-16"><p class="text-lg font-light text-white text-center | mb-5">Fincent: Your Business's Personal Financial Wizard - From Bookkeeping to Tax Filing</p>
+			<div class="w-full | flex justify-center">
+				<a class="bg-gradient-to-b from-[#fff] to-[#f2f2f2] | text-raisin-black-500 | hover:from-tropical-indigo-500 hover:to-tropical-indigo-500 hover:text-white px-5 py-3 | rounded-lg | text-base inline-flex justify-center items-center | font-semibold | transition-colors mx-auto md:mx-0" title="Book a demo" href="/book-a-demo" style="box-shadow: rgba(255, 255, 255, 0.25) 0px 2px 2px 0px inset, rgba(0, 0, 0, 0.05) 0px -2px 2px 0px inset;">Book a demo</a>
+			</div></div><div class="mb-0 md:mb-4 pt-7 pb-7 | flex items-center justify-between | border-t-[1px]"><div class="share-this-con-block | lg:mb-0"><h5 class="font-normal">Share</h5></div><ul class="flex | mb-0 p-0 | list-none"><li class="mr-2 mb-0 flex items-center justify-center w-[39px] h-[39px] rounded-full border border-transparent bg-[#f2f1eb] cursor-pointer transition-all 0.3s linear text-1rem leading-6 text-gray-900"><a class="block" href="https://twitter.com/intent/tweet?url=https://fincent.com//blog/dirty-dozen-tax-scams-2023&amp;text=Beware of Dirty Dozen Tax Scams 2023: Protect Your Finances" title="Twitter" target="_blank"><img alt="Twitter" loading="lazy" width="15" height="15" decoding="async" data-nimg="1" src="/assets/images/icons/twitter-icon.svg" style="color: transparent;"></a></li><li class="mr-2 mb-0 flex items-center justify-center w-[39px] h-[39px] rounded-full border border-transparent bg-[#f2f1eb] cursor-pointer transition-all 0.3s linear text-1rem leading-6 text-gray-900"><a class="block" href="https://www.facebook.com/sharer.php?u=https://fincent.com//blog/dirty-dozen-tax-scams-2023" target="_blank" title="Facebook"><img alt="Facebook" loading="lazy" width="15" height="15" decoding="async" data-nimg="1" src="/assets/images/icons/facebook-icon.svg" style="color: transparent;"></a></li><li class="mr-2 mb-0 flex items-center justify-center w-[39px] h-[39px] rounded-full border border-transparent bg-[#f2f1eb] cursor-pointer transition-all 0.3s linear text-1rem leading-6 text-gray-900"><a class="block" href="https://www.linkedin.com/shareArticle?url=https://fincent.com//blog/dirty-dozen-tax-scams-2023&amp;text=Beware of Dirty Dozen Tax Scams 2023: Protect Your Finances" target="_blank" title="Linkedin"><img alt="LinkedIn" loading="lazy" width="15" height="15" decoding="async" data-nimg="1" src="/assets/images/icons/linkedin-icon.svg" style="color: transparent;"></a></li><li class="mr-2 mb-0 flex items-center justify-center w-[39px] h-[39px] rounded-full border border-transparent bg-[#f2f1eb] cursor-pointer transition-all 0.3s linear text-1rem leading-6 text-gray-900"><a class="block" href="https://www.instagram.com/?url=https://fincent.com//blog/dirty-dozen-tax-scams-2023" target="_blank" title="Instagram"><img alt="Instagram" loading="lazy" width="15" height="15" decoding="async" data-nimg="1" src="/assets/images/icons/instagram-icon.svg" style="color: transparent;"></a></li></ul></div></div>
 
-
-}
-    
-
-export default DirtyDozenTax;
+</body>
+</html>
